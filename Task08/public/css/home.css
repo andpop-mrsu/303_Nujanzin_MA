@@ -1,0 +1,28 @@
+.table-container {
+    margin-bottom: 40px;
+}
+
+.jobs-table-container {
+    margin-top: 40px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 2px solid #C3C3C3;
+}
+
+th {
+    padding-right: 60px;
+}
+
+td {
+    padding: 10px 0;
+}
+
+td .button-group .btn {
+    height: 32px;
+}
+

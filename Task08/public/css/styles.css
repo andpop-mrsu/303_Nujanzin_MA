@@ -1,0 +1,213 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+.page {
+    margin: 20px 50px;
+}
+
+a {
+    color: #3399ff;
+}
+
+.header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-group .btn {
+    border: 2px solid #606060;
+    border-radius: 16px;
+    height: 40px;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.button-group .btn-blue {
+    border: none;
+    background-color: #0080ff;
+    color: #fff;
+}
+
+.button-group .btn-delete {
+    border: none;
+    background-color: red;
+    color: #fff;
+}
+
+h1 {
+    color: #404040;
+    font-size: 30px;
+}
+
+.form-container {
+    margin-top: 20px;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: #404040;
+}
+
+.form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form .form-control {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #808080;
+    height: 32px;
+    cursor: text;
+}
+
+.form .form-control:invalid {
+    border: 2px solid red;
+}
+
+
+.form .time-range {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form .time-range .time-field {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.horizontal-divider {
+    flex-grow: 1;
+}
+
+.vertical-divider {
+    border-top: 1px solid #A0A0A0;
+    height: 20px;
+}
+
+.form .form-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.form .field .error {
+    font-size: 12px;
+    color: red;
+}
+
+.dropbtn {
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .btn {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content input {
+    border: none;
+    min-width: 100%;
+    text-align: left;
+}
+
+.dropdown-content .btn:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
